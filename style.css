@@ -696,30 +696,26 @@ textarea {
   box-shadow: 0px 2px 5px 1px #aeadab;
 }
 
-/* .subscribe .title {
-
-} */
-
 .subscribe-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
-.subscribe-container form {
-  width: 50%;
-  max-width: 400px;
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  width: 85%;
 }
 
 .subscribe-row {
-  width: 90%;
+  width: 50%;
   margin-top: 0;
   height: 50px;
   box-sizing: border-box;
 }
 
 .btn-subscribe {
-  margin: 0;
+  margin: 0 0 0 20px;
 }
 
 /* TESTIMONIALS */
