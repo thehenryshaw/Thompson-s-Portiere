@@ -1,7 +1,13 @@
 'use strict';
 
 const menuList = document.querySelector('.nav-list');
+const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
+const homeSection = document.querySelector('.home');
 const aboutSection = document.querySelector('.about');
+const faqSection = document.querySelector('.faq');
+const testimonaialsSection = document.querySelector('.testimonials');
+const gallerySection = document.querySelector('.gallery');
+const contactsSection = document.querySelector('.contacts');
 const faqList = Array.from(document.querySelectorAll('.faq-item'));
 const faqDescription = Array.from(document.querySelectorAll('.faq-item__description'));
 const tabsList = Array.from(document.querySelectorAll('.tabs-item'));
@@ -16,9 +22,39 @@ menuList.addEventListener('click', event => {
   let top;
 
   switch(event.target.dataset.id) {
+    case 'Home':
+      top = homeSection.offsetTop;
+      break;
     case 'About':
-
+      top = aboutSection.offsetTop;
+      break;
+    case 'FAQ':
+      top = faqSection.offsetTop;
+      break;
+    case 'Testimonials':
+      top = testimonaialsSection.offsetTop;
+      break;
+    case 'Gallery':
+      top = gallerySection.offsetTop;
+      break;
+    case 'Contacts':
+      top = contactsSection.offsetTop;
+      break;
   }
+
+  window.scrollTo({
+    top: top,
+    behavior: 'smooth'
+  })
+})
+
+menuItemsArray.forEach((el, i) => {
+  el.addEventListener('click', e => {
+    menuItemsArray.forEach(el => {
+      el.classList.remove('active');
+    })
+    el.classList.add('active');
+  })
 })
 
 /* TABS */
@@ -48,8 +84,6 @@ faqList.forEach((el, i) => {
 /* GALLERY */
 const slider = document.querySelector('ul');
 const slides = slider.querySelectorAll('li');
-
-console.log(slides);
 document.addEventListener('DOMContentLoaded', () => {
 $('.gallery-container').flipster({
     itemContainer: 'ul',
