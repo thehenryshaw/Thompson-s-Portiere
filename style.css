@@ -441,17 +441,18 @@ header .phone {
 
 .tabs-list {
   display: flex;
-  justify-content: center;
 }
 
 .tabs-item {
   margin: 0;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   padding: 20px;
   text-transform: uppercase;
   border-bottom: 2px solid var(--color-secondary);
   cursor: pointer;
+  flex: 1 1;
+  text-align: center;
 }
 
 .swen {
