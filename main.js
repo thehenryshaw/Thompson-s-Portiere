@@ -74,10 +74,15 @@ tabsList.forEach((el, i) => {
 /* FAQ */
 faqList.forEach((el, i) => {
   el.addEventListener('click', (e) => {
-    faqDescription.forEach(el => {
-      el.classList.remove('active-faq');
-    })
-    faqDescription[i].classList.toggle('active-faq');
+    
+    if (e.target.classList.contains('active-faq')) {
+      e.target.classList.remove('active-faq');
+    } else {
+      faqList.forEach(item => {
+        item.classList.remove('active-faq');
+      });
+      e.target.classList.add('active-faq');
+    }
   })
 });
 

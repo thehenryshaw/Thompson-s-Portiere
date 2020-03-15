@@ -598,7 +598,10 @@ header .phone {
   margin-bottom: 20px;
   cursor: pointer;
   position: relative;
+}
 
+.faq-item::before {
+  transition: all ease-out .5s;
 }
 
 .faq-item__description {
@@ -613,14 +616,25 @@ header .phone {
   transform-origin: 0 0;
   position: absolute;
   z-index: -1;
+  transition: all ease-out .3s;
 }
 
 .active-faq {
+  font-weight: bold;
+}
+
+.active-faq > .faq-item__description{
   opacity: 1;
   transition: all ease-out .7s;
   transform: translateY(0) scaleY(1);
   transform-origin: 0 0;
   position: relative;
+  font-weight: 400;
+}
+
+.active-faq::before {
+  transform: rotate(90deg) translateX(2px);
+  transition: all ease-out .7s;
 }
 
 .question {
