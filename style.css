@@ -560,15 +560,16 @@ header .phone {
 .faq::after {
   content: '';
   width: 30px;
-  height: 700px;
+  height: 121%;
   position: absolute;
   right: 25%;
   background-color: var(--color-primary);
   z-index: -1;
+  max-height: 1200px;
 }
 
 .faq::after {
-  height: 580px;
+  height: 102%;
   right: 18%;
   top: 160px;
 }
@@ -576,7 +577,6 @@ header .phone {
 .faq-container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   flex-wrap: wrap;
   margin-top: 80px;
 }
@@ -588,37 +588,48 @@ header .phone {
 }
 
 .faq-list {
-  margin: 0 10px 80px 100px;
+  margin: 30px 10px 0 0 ;
   padding: 0;
-  list-style-type: none;
+  max-width: 400px;
 }
 
 .faq-item {
   line-height: 1.5;
   margin-bottom: 20px;
   cursor: pointer;
+  position: relative;
+
 }
 
 .faq-item__description {
-  display: none;
-  width: 50%;
-  height: 0;
-  margin-left: 20px;
-  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  margin: 0;
+  padding: 20px;
   line-height: 20px;
   background-color: var(--color-primary);
+  transform: translateY(-50px) scaleY(.5);
+  transform-origin: 0 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .active-faq {
-  display: block;
-  height: auto;
+  opacity: 1;
+  transition: all ease-out .7s;
+  transform: translateY(0) scaleY(1);
+  transform-origin: 0 0;
+  position: relative;
 }
 
 .question {
-  padding: 10px;
+  margin-top: 30px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all ease-out .5s;
 }
 
 .question h3 {
