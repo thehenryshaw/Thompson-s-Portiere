@@ -1,9 +1,25 @@
 'use strict';
 
+const menuList = document.querySelector('.nav-list');
+const aboutSection = document.querySelector('.about');
 const faqList = Array.from(document.querySelectorAll('.faq-item'));
 const faqDescription = Array.from(document.querySelectorAll('.faq-item__description'));
 const tabsList = Array.from(document.querySelectorAll('.tabs-item'));
 const tabsContent = Array.from(document.querySelectorAll('.tabs-content'));
+
+/* MENU */
+menuList.addEventListener('click', event => {
+  if (event.target.classList.contains('nav-list')) {
+    return;
+  }
+  event.preventDefault();
+  let top;
+
+  switch(event.target.dataset.id) {
+    case 'About':
+
+  }
+})
 
 /* TABS */
 tabsList.forEach((el, i) => {
