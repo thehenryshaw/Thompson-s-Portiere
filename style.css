@@ -18,7 +18,9 @@
 
 body {
   font-family: 'Hoefler Text', sans-serif;
-  transition-delay: .5s;
+}
+
+.wrapper {
   transition: all ease-out .7s;
 }
 
@@ -175,7 +177,7 @@ header .phone {
   padding: 0;
   margin: 0;
   padding-top: 100px;
-  transform: translate(200px, -30px);
+  transform: translate(300px, -30px);
   transition: all ease-out .7s;
   background-color: #fff;
   opacity: 0;
@@ -428,7 +430,7 @@ header .phone {
   background-color: var(--color-primary);
   display: block;
   position: absolute;
-  top: 210px;
+  bottom: 0;
   left: 13%;
   z-index: -1;
 }
@@ -443,21 +445,26 @@ header .phone {
   font-weight: 400;
   padding: 20px;
   text-transform: uppercase;
-  border-bottom: 2px solid var(--color-secondary);
+  border-bottom: 1px solid var(--color-secondary);
   cursor: pointer;
   flex: 1 1;
   text-align: center;
+  background-color: var(--color-primary);
+  border-top: 1px solid white;
 }
 
-.swen {
-  border: none;
+.tabs-item:nth-child(1) {
   border-right: 1px solid var(--color-secondary);
+}
+.tabs-item:nth-child(3) {
   border-left: 1px solid var(--color-secondary);
 }
 
 .active-tab {
-  background-color: var(--color-primary);
+  background-color: white;
   transition: all ease-out .5s;
+  border: none;
+  border-top: 1px solid var(--color-secondary);
 }
 
 .tabs-content {
