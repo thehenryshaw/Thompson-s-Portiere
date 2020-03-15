@@ -13,50 +13,6 @@ const faqDescription = Array.from(document.querySelectorAll('.faq-item__descript
 const tabsList = Array.from(document.querySelectorAll('.tabs-item'));
 const tabsContent = Array.from(document.querySelectorAll('.tabs-content'));
 
-/* MENU */
-menuList.addEventListener('click', event => {
-  if (event.target.classList.contains('nav-list')) {
-    return;
-  }
-  event.preventDefault();
-  let top;
-
-  switch(event.target.dataset.id) {
-    case 'Home':
-      top = homeSection.offsetTop;
-      break;
-    case 'About':
-      top = aboutSection.offsetTop;
-      break;
-    case 'FAQ':
-      top = faqSection.offsetTop;
-      break;
-    case 'Testimonials':
-      top = testimonaialsSection.offsetTop;
-      break;
-    case 'Gallery':
-      top = gallerySection.offsetTop;
-      break;
-    case 'Contacts':
-      top = contactsSection.offsetTop;
-      break;
-  }
-
-  window.scrollTo({
-    top: top,
-    behavior: 'smooth'
-  })
-})
-
-menuItemsArray.forEach((el, i) => {
-  el.addEventListener('click', e => {
-    menuItemsArray.forEach(el => {
-      el.classList.remove('active');
-    })
-    el.classList.add('active');
-  })
-})
-
 /* TABS */
 tabsList.forEach((el, i) => {
   el.addEventListener('click', e => {
