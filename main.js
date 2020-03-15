@@ -3,6 +3,8 @@
 const homeSection = document.querySelector('.home');
 const aboutSection = document.querySelector('.about');
 const faqSection = document.querySelector('.faq');
+const subscribe = document.querySelector('.subscribe-form');
+const subscribeBtn = document.querySelector('.btn-subscribe');
 const testimonaialsSection = document.querySelector('.testimonials');
 const gallerySection = document.querySelector('.gallery');
 const contactsSection = document.querySelector('.contacts');
@@ -125,7 +127,6 @@ $('.gallery-container').flipster({
 function onSwitch(cur, prev) {
   if (+cur.dataset.id === slides.length) {
     //$('.gallery-container').flipster('play', 5000);
-  } 
-}
-
+    } 
+  }
 });
