@@ -713,6 +713,8 @@ textarea {
 .subscribe-row {
   width: 90%;
   margin-top: 0;
+  height: 50px;
+  box-sizing: border-box;
 }
 
 .btn-subscribe {
