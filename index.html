@@ -14,6 +14,7 @@
   <title>Thompson`s Portier</title>
 </head>
 <body>
+  <div class="wrapper">
   <header>
     <div class="company-name">
       <span>Thompson`s</span>
@@ -236,7 +237,7 @@
     </div>
     <div class="address">
       <p>43 S Washington Ave<span>Seattle, WS</span></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.3069745061907!2d-122.33765398471706!3d47.600720396378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aa54646b921%3A0x3f47e7199bc2f491!2zNDMgUyBXYXNoaW5ndG9uIFN0LCBTZWF0dGxlLCBXQSA5ODEwNCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583917861242!5m2!1sru!2sru"  height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe lang="en-En" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.3069745061907!2d-122.33765398471706!3d47.600720396378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aa54646b921%3A0x3f47e7199bc2f491!2zNDMgUyBXYXNoaW5ndG9uIFN0LCBTZWF0dGxlLCBXQSA5ODEwNCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583917861242!5m2!1sru!2sru"  height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </section>
 
@@ -274,15 +275,18 @@
     </div>
   </footer>
 
-  <div class="border"></div>
+
+
+</div>
   <script>
     const body = document.body;
     const btn = document.querySelector('input#menu');
+    const wrapper = document.querySelector('.wrapper');
     btn.addEventListener('change', () => {
       if (btn.checked) {
-        body.style.width = `${window.innerWidth - 198}px`;
+        wrapper.style.width = `80%`;
       } else {
-        body.style.width = window.innerWidth + 'px';
+        wrapper.style.width = '100%';
       }
     })
   </script>
