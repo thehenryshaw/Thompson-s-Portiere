@@ -1,5 +1,8 @@
 'use strict';
 
+const menuList = document.querySelector('.nav-list');
+const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
+
 /* SMOOTH SCROLL */
 menuList.addEventListener('click', event => {
   if (event.target.classList.contains('nav-list')) {

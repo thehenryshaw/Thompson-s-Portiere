@@ -1,7 +1,5 @@
 'use strict';
 
-const menuList = document.querySelector('.nav-list');
-const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
 const homeSection = document.querySelector('.home');
 const aboutSection = document.querySelector('.about');
 const faqSection = document.querySelector('.faq');
