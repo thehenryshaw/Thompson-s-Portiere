@@ -720,13 +720,18 @@ textarea {
   margin: 0 0 0 20px;
 }
 
-output.error {
-  color: red;
-  font-size: 12px;
+.subscribe output {
+width: 100%;
+text-align: center;
+display: block;
+margin-top: 20px;
+font-size: 14px;
 }
-output.success {
+.subscribe output.error {
+  color: red;
+}
+.subscribe output.success {
   color: black;
-  font-size: 12px;
 }
 
 /* TESTIMONIALS */
