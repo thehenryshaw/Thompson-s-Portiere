@@ -222,7 +222,7 @@ header .phone {
   display: flex;
   box-sizing: border-box;
   height: 100vh;
-  padding: 100px 0 100px 100px;
+  padding: 100px 0 0 0;
 }
 
 .home::before {
@@ -237,14 +237,15 @@ header .phone {
   z-index: -1;
 }
 
-.home-container {
+.home-img-container {
   margin-right: 20px;
+  text-align: center;
+  width: 50%;
 }
 
-.home-container img {
+.home-img-container img {
   /* margin: 100px 0 0 150px; */
-  width: 350px;
-  height: 490px;
+  height: 100%;
 }
 
 .home-text-container {
@@ -253,6 +254,7 @@ header .phone {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 20px;
+  width: 50%;
 }
 
 .home-text-container h1 {
@@ -716,6 +718,15 @@ textarea {
 
 .btn-subscribe {
   margin: 0 0 0 20px;
+}
+
+output.error {
+  color: red;
+  font-size: 12px;
+}
+output.success {
+  color: black;
+  font-size: 12px;
 }
 
 /* TESTIMONIALS */
