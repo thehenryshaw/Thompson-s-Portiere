@@ -1005,6 +1005,10 @@ textarea {
   width: 100%;
   display: inline-block;
 }
+.contact a:last-of-type {
+  cursor: default;
+}
+
 
 .contact::before {
   content: '';
