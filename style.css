@@ -34,22 +34,6 @@ header {
   padding: 10px 50px 10px 150px;
 }
 
-.company-name {
-  font-family: 'Hoefler Text', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 36px;
-}
-
-.company-name span {
-  display: block;
-  font-family: 'Brush Script MT';
-  font-size: 24px;
-  letter-spacing: 1px;  
-  text-transform: none;
-  text-align: center;
-}
-
 .menu {
   display: flex;
   flex: 1 1;
@@ -182,7 +166,6 @@ header .phone {
   background-color: #fff;
   opacity: 0;
   border-left: 10px solid rgba(0,0,0,0.3);
-  
 }
 
 .nav-item {
@@ -214,8 +197,6 @@ header .phone {
   opacity: 1;
   transition: all ease-out .7s;
 }
-
-
 
 /* HOME */
 .home {
@@ -498,7 +479,6 @@ header .phone {
   display: none;
 }
 
-
 /* BANNER-VIDEO */
 .banner-video {
   margin: 0;
@@ -727,9 +707,11 @@ display: block;
 margin-top: 20px;
 font-size: 14px;
 }
+
 .subscribe output.error {
   color: red;
 }
+
 .subscribe output.success {
   color: black;
 }
@@ -826,7 +808,6 @@ font-size: 14px;
 
 /* GALLERY */
 .gallery {
-
   /* background-color: var(--color-primary); */
   position: relative;
   padding-top: 50px;
@@ -837,6 +818,7 @@ font-size: 14px;
   margin: 0;
   /* transform: rotate(90deg) translate(80px, 100px); */
 }
+
 /* 
 .gallery::before {
   content: '';
@@ -886,12 +868,10 @@ font-size: 14px;
 .flipster--carousel .flipster__item--past-1 .flipster__item__content {
   transform: rotateY(45deg) scale(.7);
 }
-.flipster--carousel .flipster__item--future-1 .flipster__item__content
-{
+
+.flipster--carousel .flipster__item--future-1 .flipster__item__content {
   transform: rotateY(-45deg) scale(.7);
 }
-
-
 
 .gallery .btn {
   margin: auto;
@@ -958,6 +938,7 @@ font-size: 14px;
   display: flex;
   flex-wrap: wrap;
 }
+
 .contacts > div {
   flex: 1 1;
 }
@@ -1015,7 +996,6 @@ font-size: 14px;
   align-items: flex-start;
   justify-content: flex-end;
   text-transform: uppercase;
-  
 }
 
 .touch {
@@ -1029,7 +1009,6 @@ font-size: 14px;
   margin-bottom: 40px;
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .contact a {
@@ -1044,7 +1023,6 @@ font-size: 14px;
   cursor: default;
 }
 
-
 .contact::before {
   content: '';
   display: inline-block;
@@ -1054,7 +1032,6 @@ font-size: 14px;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 30px 0 30%;
-
 }
 
 .contact.email::before {
@@ -1081,7 +1058,6 @@ font-size: 14px;
   z-index: -1;
 }
 
-
 iframe {
   width: 100%;
 }
@@ -1103,6 +1079,16 @@ iframe {
 .footer-container li:first-child {
   padding-bottom: 20px;
   text-transform: uppercase;
+}
+
+.footer-container a {
+  color: #000;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  opacity: 1;
 }
 
 .social-footer {

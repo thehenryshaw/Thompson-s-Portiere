@@ -16,10 +16,7 @@
 <body>
   <div class="wrapper">
   <header>
-    <div class="company-name">
-      <span>Thompson`s</span>
-      Portiere
-    </div>
+    <img src="./img/company-name.png" alt="Thompson`s Portiere">
     <a class="phone" href="tel:+0(939)919-98-3434">+0 (939) 919 98 3434</a>
     <nav class="nav-menu open">
       <div class="bars">
@@ -88,7 +85,7 @@
   </section>
 
   <!-- TABS -->
-  <section class="tabs">
+  <section class="tabs" id="tabs">
     <div class="tabs-container">
       <div class="tabs-list">
         <h3 class="tabs-item">Top quality</h3>
@@ -158,7 +155,7 @@
   </section>
 
   <!-- SUBSCRIBE -->
-  <section class="subscribe">
+  <section class="subscribe" id="subscribe">
     <h2 class="title">Subscribe to our newsletter</h2>
     <div class="subscribe-container">
       <form class="subscribe-form" id="form_id">
@@ -214,7 +211,7 @@
     </section>
 
   <!-- SOCIAL -->
-  <section class="social">
+  <section class="social" id="follow">
     <h2 class="title">Follow us</h2>
     <ul class="social-list">
       <li><a href="http://instagram.com" target="_blank" class="social-item instagram"></a></li>
@@ -229,7 +226,6 @@
   <section class="contacts" id="contacts">
     <div class="contacts-container">
       <h2 class="title">Contact us
-        
         <span class="subtitle">
           <span class="ampersand">&</span>
           visit our shop
@@ -251,21 +247,21 @@
     <div class="footer-container">
       <ul class="company">
         <li>Company</li>
-        <li>About us</li>
-        <li>Contact us</li>
-        <li>Follow us</li>
-        <li>Subscribe</li>
+        <li><a href="#about" data-id="About">About us</a></li>
+        <li><a href="#contacts" data-id="Contacts">Contact us</a></li>
+        <li><a href="#follow" data-id="Follow">Follow us</a></li>
+        <li><a href="#subscribe" data-id="Subscribe">Subscribe</a></li>
       </ul>
       <ul class="work">
         <li>Our work</li>
-        <li>Gallery</li>
-        <li>Featuries</li>
+        <li><a href="#gallery" data-id="Gallery">Gallery</a></li>
+        <li><a href="#tabs" data-id="Tabs">Featuries</a></li>
       </ul>
       <ul class="enquiries">
         <li>Enquiries</li>
-        <li>FAQ</li>
-        <li>Ask a question</li>
-        <li>Terms of Agreement</li>
+        <li><a href="#faq" data-id="FAQ">FAQ</a></li>
+        <li><a href="#faq" data-id="FAQ">Ask a question</a></li>
+        <li><a href="#">Terms of Agreement</a></li>
       </ul>
     </div>
     <div class="social-footer">
@@ -279,10 +275,8 @@
       <p>2020 (c) All Rights Reserved</p>
     </div>
   </footer>
-
-
-
 </div>
+
   <script>
     const body = document.body;
     const btn = document.querySelector('input#menu');

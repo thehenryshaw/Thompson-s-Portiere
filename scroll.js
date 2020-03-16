@@ -2,8 +2,9 @@
 
 const menuList = document.querySelector('.nav-list');
 const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
+const footerList = document.querySelector('.footer-container');
 
-/* SMOOTH SCROLL */
+/* SMOOTH SCROLL (MENU) */
 menuList.addEventListener('click', event => {
   if (event.target.classList.contains('nav-list')) {
     return;
@@ -20,6 +21,47 @@ menuList.addEventListener('click', event => {
       break;
     case 'FAQ':
       top = faqSection.offsetTop;
+      break;
+    case 'Testimonials':
+      top = testimonaialsSection.offsetTop;
+      break;
+    case 'Gallery':
+      top = gallerySection.offsetTop;
+      break;
+    case 'Contacts':
+      top = contactsSection.offsetTop;
+      break;
+  }
+
+  window.scrollTo({
+    top: top,
+    behavior: 'smooth'
+  })
+})
+
+/* SMOOTH SCROLL (FOOTER) */
+footerList.addEventListener('click', event => {
+  if (event.target.classList.contains('footer-container')) {
+    return;
+  }
+  event.preventDefault();
+  let top;
+
+  switch(event.target.dataset.id) {
+    case 'About':
+      top = aboutSection.offsetTop;
+      break;
+    case 'FAQ':
+      top = faqSection.offsetTop;
+      break;
+    case 'Follow':
+      top = followSection.offsetTop;
+      break;
+    case 'Tabs':
+      top = tabsSection.offsetTop;
+      break;
+    case 'Subscribe':
+      top = subscribeSection.offsetTop;
       break;
     case 'Testimonials':
       top = testimonaialsSection.offsetTop;
