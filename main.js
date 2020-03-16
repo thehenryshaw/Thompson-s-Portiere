@@ -5,6 +5,7 @@ const aboutSection = document.querySelector('.about');
 const faqSection = document.querySelector('.faq');
 const subscribe = document.querySelector('.subscribe-form');
 const subscribeBtn = document.querySelector('.btn-subscribe');
+const subscribeInput = document.querySelector('.subscribe-row');
 const testimonaialsSection = document.querySelector('.testimonials');
 const gallerySection = document.querySelector('.gallery');
 const contactsSection = document.querySelector('.contacts');
@@ -41,6 +42,24 @@ faqList.forEach((el, i) => {
     }
   })
 });
+
+/* SUBSCRIBE */
+subscribe.addEventListener('submit', () => {
+  event.preventDefault();
+  var reg = /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i;
+  var address = subscribeInput.value;
+  const output = subscribe.nextElementSibling;
+  if (!reg.test(address)) {
+    output.textContent = 'Please enter correct email';
+    output.classList.add('error');
+  } else {
+    /*сделать отправку на сервер*/ 
+    output.classList.remove('error');
+    output.classList.add('success');
+    output.textContent = 'Thank you! You have been subscribed.';
+  }
+
+})
 
 /* GALLERY */
 const slider = document.querySelector('ul');
