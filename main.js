@@ -55,7 +55,7 @@ $('.gallery-container').flipster({
     // [string|object]
     // Selector for children of `itemContainer` to flip
 
-    start: 'center',
+    start: 0,
     // ['center'|number]
     // Zero based index of the starting item, or use 'center' to start in the middle
 
@@ -92,7 +92,7 @@ $('.gallery-container').flipster({
     // [true|false]
     // Enable left/right arrow navigation
 
-    scrollwheel: true,
+    scrollwheel: false,
     // [true|false]
     // Enable mousewheel/trackpad navigation; up/left = previous, down/right = next
 
