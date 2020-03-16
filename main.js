@@ -58,7 +58,6 @@ subscribe.addEventListener('submit', () => {
     output.classList.add('success');
     output.textContent = 'Thank you! You have been subscribed.';
   }
-
 })
 
 /* GALLERY */
