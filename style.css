@@ -433,7 +433,7 @@ header .phone {
   flex: 1 1;
   text-align: center;
   background-color: var(--color-primary);
-  border-top: 1px solid white;
+  border-top: 1px solid #fff;
 }
 
 .tabs-item:nth-child(1) {
@@ -444,7 +444,7 @@ header .phone {
 }
 
 .active-tab {
-  background-color: white;
+  background-color: #fff;
   transition: all ease-out .5s;
   border: none;
   border-top: 1px solid var(--color-secondary);
