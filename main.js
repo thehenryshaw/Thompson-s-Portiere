@@ -48,10 +48,11 @@ subscribe.addEventListener('submit', () => {
   event.preventDefault();
   var reg = /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i;
   var address = subscribeInput.value;
-  const output = subscribe.nextElementSibling;
+  const output = document.querySelector('output');
   if (!reg.test(address)) {
     output.textContent = 'Please enter correct email';
     output.classList.add('error');
+    output.classList.remove('success');
   } else {
     /*сделать отправку на сервер*/ 
     output.classList.remove('error');
