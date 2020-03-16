@@ -34,7 +34,6 @@ tabsList.forEach((el, i) => {
 /* FAQ */
 faqList.forEach((el, i) => {
   el.addEventListener('click', (e) => {
-    
     if (e.target.classList.contains('active-faq')) {
       e.target.classList.remove('active-faq');
     } else {
@@ -49,8 +48,8 @@ faqList.forEach((el, i) => {
 /* SUBSCRIBE */
 subscribe.addEventListener('submit', () => {
   event.preventDefault();
-  var reg = /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i;
-  var address = subscribeInput.value;
+  let reg = /^[0-9a-z-\.]+\@[0-9a-z-]{2,}\.[a-z]{2,}$/i;
+  let address = subscribeInput.value;
   const output = document.querySelector('output');
   if (!reg.test(address)) {
     output.textContent = 'Please enter correct email';
