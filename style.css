@@ -723,14 +723,15 @@ text-align: center;
 display: block;
 margin-top: 20px;
 font-size: 14px;
+height: 18px;
 }
 
 .subscribe output.error {
-  color: red;
+  color: rgb(182, 78, 76);
 }
 
 .subscribe output.success {
-  color: black;
+  color:rgb(89, 161, 125);
 }
 
 /* TESTIMONIALS */
