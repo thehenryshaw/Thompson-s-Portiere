@@ -271,9 +271,15 @@ header .phone {
   height: 50px;
   padding: 0;
   border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--color-secondary);
   color: #fff;
   cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: none;
 }
 
 /* BANNER-MAIN */
@@ -322,11 +328,6 @@ header .phone {
   font-size: 50px;
 }
 
-.btn-main {
-  width: 150px;
-  border-radius: 3px;
-}
-
 /* ABOUT */
 .about {
   position: relative;
@@ -352,15 +353,15 @@ header .phone {
 
 .about-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   flex: 1 1;
 }
 
 .description {
   z-index: 2;
+  margin-left: 100px;
   padding-right: 15px;
-  flex: 0 1;
 }
 
 .description p {
@@ -683,6 +684,7 @@ textarea {
   padding: 15px;
   border: none;
   box-shadow: -1px 2px 5px 1px #aeadab;
+  resize: none;
 }
 
 .btn-submit {
