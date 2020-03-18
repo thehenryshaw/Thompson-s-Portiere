@@ -153,8 +153,6 @@ function onSwitch(cur, prev) {
   }
 });
 
-
-
 /* TESTIMONIALS CAROUSEL */
 const carouselNav = document.querySelector('.carousel-controls');
 const carouselTrack = document.querySelector('.testimonials-carousel');

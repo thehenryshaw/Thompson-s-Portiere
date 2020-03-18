@@ -2,6 +2,7 @@
 
 const menuList = document.querySelector('.nav-list');
 const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
+const learnMoreBtn = Array.from(document.querySelectorAll('.btn-href'));
 const footerList = document.querySelector('.footer-container');
 
 /* SMOOTH SCROLL (MENU) */
@@ -36,6 +37,31 @@ menuList.addEventListener('click', event => {
   window.scrollTo({
     top: top,
     behavior: 'smooth'
+  })
+})
+
+/* LEARN MORE & ORDER BUTTONS */
+learnMoreBtn.forEach(el => {
+  el.addEventListener('click', event => {
+    if (event.target.classList.contains('.btn-href')) {
+      return;
+    }
+    event.preventDefault();
+    let top;
+  
+    switch(event.target.dataset.id) {
+      case 'About':
+        top = aboutSection.offsetTop;
+        break;
+      case 'Contacts':
+        top = contactsSection.offsetTop;
+        break;
+    }
+  
+    window.scrollTo({
+      top: top,
+      behavior: 'smooth'
+    })
   })
 })
 
