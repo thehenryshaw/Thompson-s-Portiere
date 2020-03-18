@@ -350,15 +350,15 @@ header .phone {
 
 .about-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   flex: 1 1;
 }
 
 .description {
   z-index: 2;
+  margin-left: 100px;
   padding-right: 15px;
-  flex: 0 1;
 }
 
 .description p {
