@@ -271,9 +271,15 @@ header .phone {
   height: 50px;
   padding: 0;
   border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: var(--color-secondary);
   color: #fff;
   cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: none;
 }
 
 /* BANNER-MAIN */
@@ -320,11 +326,6 @@ header .phone {
   display: block;
   margin-top: 10px;
   font-size: 50px;
-}
-
-.btn-main {
-  width: 150px;
-  border-radius: 3px;
 }
 
 /* ABOUT */
