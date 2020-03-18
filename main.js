@@ -26,8 +26,8 @@ tabsList.forEach((el, i) => {
     tabsList.forEach(el => {
       el.classList.remove('active-tab');
     }) 
-    el.classList.add('active-tab');
     tabsContent[i].classList.remove('hide-tab');
+    el.classList.add('active-tab');
   })
 });
 
