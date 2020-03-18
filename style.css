@@ -34,6 +34,10 @@ header {
   padding: 10px 50px 10px 150px;
 }
 
+header svg {
+  height: 80px;
+}
+
 .menu {
   display: flex;
   flex: 1 1;
@@ -1109,7 +1113,7 @@ height: 18px;
   z-index: -1;
 }
 
-iframe {
+.map iframe {
   width: 100%;
 }
 
