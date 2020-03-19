@@ -162,7 +162,6 @@ header a {
   width: 20vw;
 }
 
-
 .nav-list {
   height: 0;
   list-style: none;
@@ -175,7 +174,6 @@ header a {
   opacity: 0;
   border-left: 10px solid rgba(0,0,0,0.3);
 }
-
 
 .bars input:checked ~ .nav-list {
   transform: translate(0, -30px);
@@ -291,6 +289,19 @@ header a {
 
 .home-text-container .btn {
   margin-bottom: 50px;
+}
+.btn-href {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--color-secondary);
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -451,6 +462,7 @@ header a {
   background-color: var(--color-primary);
   transition: all ease-out .5s;
 }
+
 .tabs-item:hover {
   background-color: #fff;
 }
@@ -458,6 +470,7 @@ header a {
 .tabs-item:nth-child(1) {
   border-right: 1px solid var(--color-secondary);
 }
+
 .tabs-item:nth-child(3) {
   border-left: 1px solid var(--color-secondary);
 }
@@ -472,7 +485,6 @@ header a {
 
 .content-container {
   position: relative;
-
 }
 
 .tabs-content {
@@ -483,7 +495,6 @@ header a {
   transition: all ease-out 1s;
   opacity: 1;
 }
-
 
 .tabs-content p {
   margin: 0;
@@ -523,6 +534,22 @@ opacity: 0;
   min-height: 30px;
   background-color: var(--color-primary);
   transform: translate(0, 85px);
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--color-secondary);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: none;
 }
 
 .btn-video {
@@ -783,6 +810,7 @@ height: 18px;
   padding: 0;
   width: 70vw;
 }
+
 .testimonials-carousel {
   margin: 0;
   padding: 0;
@@ -801,7 +829,9 @@ height: 18px;
   opacity: 0;
   transition: all ease-out .5s;
 }
-.testimonials-item.current-slide .cards-container {
+
+.testimonials-item.current-slide 
+.cards-container {
   opacity: 1;
   transition: all ease-out .5s;
 }
@@ -821,7 +851,6 @@ height: 18px;
 .card:nth-child(1) {
   margin-right: 5px;
 }
-
 
 .card img {
   width: 100px;
@@ -936,9 +965,8 @@ height: 18px;
   transform: rotateY(-45deg) scale(.7);
 }
 
-.gallery .btn {
+.gallery .btn-href {
   margin: auto;
-  display: block;
 }
 
 /* SOCIAL */
@@ -1086,6 +1114,7 @@ height: 18px;
   width: 100%;
   display: inline-block;
 }
+
 .contact a:last-of-type {
   cursor: default;
 }
