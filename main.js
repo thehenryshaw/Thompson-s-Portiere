@@ -14,10 +14,15 @@ const gallerySection = document.querySelector('.gallery');
 const contactsSection = document.querySelector('.contacts');
 const faqList = Array.from(document.querySelectorAll('.faq-item'));
 const faqDescription = Array.from(document.querySelectorAll('.faq-item__description'));
+const tabs = document.querySelector('.tabs');
 const tabsList = Array.from(document.querySelectorAll('.tabs-item'));
 const tabsContent = Array.from(document.querySelectorAll('.tabs-content'));
 
 /* TABS */
+const currentTab = tabs.querySelector('.tabs-content:not(.hide-tab)');
+const tabsTitleContainer = tabs.querySelector('.tabs-list');
+tabs.style.height = currentTab.getBoundingClientRect().height + tabsTitleContainer.getBoundingClientRect().height + 'px';
+
 tabsList.forEach((el, i) => {
   el.addEventListener('click', e => {
     tabsContent.forEach(el => {
@@ -28,6 +33,7 @@ tabsList.forEach((el, i) => {
     }) 
     tabsContent[i].classList.remove('hide-tab');
     el.classList.add('active-tab');
+    tabs.style.height = tabsContent[i].getBoundingClientRect().height + tabsTitleContainer.getBoundingClientRect().height + 'px';
   })
 });
 
