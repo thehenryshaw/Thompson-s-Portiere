@@ -330,6 +330,9 @@
     const btn = document.querySelector('input#menu');
     const wrapper = document.querySelector('.wrapper');
     btn.addEventListener('change', () => {
+      if (window.innerWidth <= 600) {
+        return;
+      }
       if (btn.checked) {
         wrapper.style.width = `80%`;
       } else {
