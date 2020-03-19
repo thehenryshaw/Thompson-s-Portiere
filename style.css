@@ -285,11 +285,6 @@ header a {
   font-size: 16px;
 }
 
-
-
-.home-text-container .btn {
-  margin-bottom: 50px;
-}
 .btn-href {
   display: flex;
   justify-content: center;
@@ -302,6 +297,7 @@ header a {
   background-color: var(--color-secondary);
   color: #fff;
   text-decoration: none;
+  margin-bottom: 50px;
 }
 
 
