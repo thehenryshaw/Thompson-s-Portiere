@@ -275,8 +275,8 @@ header a {
 
 .ampersand {
   position: absolute;
-  left: 150px;
-  top: 65px;
+  left: 200px;
+  top: 30px;
   font-size: 110px;
   color: var(--color-secondary);
 }
@@ -420,12 +420,12 @@ header a {
 .tabs {
   display: flex;
   justify-content: center;
+  padding-top: 80px;
 }
 
 .tabs-container {
   width: 900px;
   position: relative;
-  margin-top: 80px;
 }
 
 .tabs-container::before {
@@ -484,12 +484,14 @@ header a {
 }
 
 .tabs-content {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
-  transition: all ease-out 1s;
+  transition: all ease-out .7s;
   opacity: 1;
+  min-height: 480px;
 }
 
 .tabs-content p {
