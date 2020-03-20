@@ -30,13 +30,18 @@
   }
 
   .bars {
-    background: linear-gradient(180deg, #ffffff 60%, transparent 100%);
-    height: 95px;
+    background-color: rgba(250, 250, 250, .4);
+    height: 50px;
   }
 
   .bars label {
-    right: 30px;
-    top: 35px;
+    right: 15px;
+    top: 20px;
+  }
+
+  .bars span {
+    width: 55px;
+    margin-top: 10px;
   }
 
   /* HOME */
@@ -156,10 +161,6 @@
 
   /* TABS */
   .tabs {
-    padding: 0;
-  }
-
-  .tabs-container {
     padding-top: 80px;
   }
 
@@ -255,6 +256,10 @@
   }
 
   /* TESTIMONIALS */
+  .testimonials {
+    padding-top: 80px;
+  }
+  
   .testimonials-carousel-container {
     width: 90vw;
   }
