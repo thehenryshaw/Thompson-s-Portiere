@@ -54,7 +54,6 @@
 
   .home-img-container img {
     min-width: 360px;
-    filter: sepia(0.2);
   }
 
   .home-text-container {
@@ -70,10 +69,19 @@
   }
 
   .ampersand {
+    top: 30px;
     left: 225px;
   }
 
   /* BANNER */
+  .banner-main {
+    padding: 0;
+  }
+
+  .banner-main .title {
+    margin-top: 80px;
+  }
+
   .title {
     font-size: 24px;
     z-index: 0;
@@ -147,6 +155,11 @@
   }
 
   /* TABS */
+  .tabs {
+    margin-top: 80px;
+    padding: 0;
+  }
+
   .tabs-container::before {
     width: 93%;
     height: 221px;
@@ -167,8 +180,14 @@
   }
 
   /* BANNER-VIDEO */
+  .banner-video {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
   .banner-video .ripple {
     top: 183px;
+    z-index: -1;
   }
 
   .banner-video::before {
@@ -198,7 +217,7 @@
   }
 
   .question, form, textarea {
-    width: 100;
+    width: 100%;
   }
 
   .row {
@@ -210,7 +229,11 @@
     width: 70%;
   }
 
-  /* SUBSCRIBE */ 
+  /* SUBSCRIBE */
+  .subscribe {
+    margin-top: 80px;
+  }
+
   .subscribe-form {
     flex-direction: column;
     align-items: center;
@@ -247,10 +270,17 @@
     margin-left: 30px;
   }
 
+  /* GALLERY */ 
+  .gallery {
+    margin-top: 80px;
+    padding: 0;
+  }
+  
   /* SOCIAL */
   .social {
     width: 100%;
     padding: 0;
+    margin: 80px 0 0 0;
   }
 
   .social::before {
@@ -265,6 +295,7 @@
 
   /* CONTACTS */
   .contacts {
+    margin-top: 80px;
     padding-bottom: 100px;
   }
 
