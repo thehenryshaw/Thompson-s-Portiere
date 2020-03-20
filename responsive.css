@@ -202,6 +202,11 @@
   }
 
   /* FAQ */
+  .faq::before {
+    height: 105%;
+    right: 35%;
+  }
+
   .faq-list {
     margin: 0;
   }
