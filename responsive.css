@@ -92,8 +92,8 @@
     font-size: 2em;
   }
 
-  .ampersand {
-    top: 30px;
+  .home-text-container .ampersand {
+    top: 20px;
     left: 160px;
     font-size: 2em;
   }
@@ -313,6 +313,10 @@
     padding-top: 80px;
   }
   
+  .gallery-track {
+    z-index: 0;
+  }
+
   /* SOCIAL */
   .social {
     width: 100%;
