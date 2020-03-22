@@ -1,7 +1,9 @@
 'use strict';
 
-const menuList = document.querySelector('.nav-list');
-const menuItemsArray = Array.from(document.querySelectorAll('.nav-item'));
+const navMenu = document.querySelector('.nav-menu');
+const menuList = navMenu.querySelector('.nav-list');
+const menuControl = navMenu.querySelector('input#menu');
+const menuItemsArray = Array.from(navMenu.querySelectorAll('.nav-item'));
 const learnMoreBtn = Array.from(document.querySelectorAll('.btn-href'));
 const footerList = document.querySelector('.footer-container');
 
@@ -38,6 +40,10 @@ menuList.addEventListener('click', event => {
     top: top,
     behavior: 'smooth'
   })
+
+  if (window.innerWidth <= 640) {
+    menuControl.checked = false;
+  }
 })
 
 /* LEARN MORE & ORDER BUTTONS */
