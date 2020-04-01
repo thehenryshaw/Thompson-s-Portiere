@@ -589,6 +589,60 @@ opacity: 0;
   }
 }
 
+/* MODAL FOR BANNER-VIDEO */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 100px 0 0 0;
+  padding: 0;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all ease-out .5s;
+  visibility: hidden;
+}
+
+.modal.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease-out .5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  transform: scale(0);
+  transform-origin: center; 
+  transition: all ease-out 1s;
+  position: relative;
+  z-index: 200;
+}
+
+.modal.visible .modal-content {
+  transform: scale(1);
+  transition: all ease-out 1s;
+  opacity: 1;
+  margin-bottom: 100px;
+}
+
 /* FAQ */
 .faq {
   position: relative;

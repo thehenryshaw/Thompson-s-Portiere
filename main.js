@@ -8,6 +8,10 @@ const subscribe = document.querySelector('.subscribe-form');
 const subscribeBtn = document.querySelector('.btn-subscribe');
 const subscribeInput = document.querySelector('.subscribe-row');
 const tabsSection = document.querySelector('.tabs');
+const btnVideo = document.querySelector('.btn-video');
+const modalVideo = document.querySelector('.modal');
+const player = document.querySelector('.modal iframe');
+const overlay = document.querySelector('.overlay');
 const testimonaialsSection = document.querySelector('.testimonials');
 const followSection = document.querySelector('.social');
 const gallerySection = document.querySelector('.gallery');
@@ -17,6 +21,17 @@ const faqDescription = Array.from(document.querySelectorAll('.faq-item__descript
 const tabs = document.querySelector('.tabs');
 const tabsList = Array.from(document.querySelectorAll('.tabs-item'));
 const tabsContent = Array.from(document.querySelectorAll('.tabs-content'));
+
+/* MODAL FOR VIDEO-BANNER */
+btnVideo.addEventListener('click', () => {
+  modalVideo.classList.add('visible');
+  player.src = 'https://www.youtube.com/embed/1wtjyv1lmKc';
+})
+
+overlay.addEventListener('click', () => {
+  modalVideo.classList.remove('visible');
+  player.src = '';
+})
 
 /* TABS */
 const currentTab = tabs.querySelector('.tabs-content:not(.hide-tab)');
