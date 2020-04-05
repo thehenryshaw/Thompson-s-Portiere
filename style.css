@@ -643,6 +643,11 @@ opacity: 0;
   margin-bottom: 100px;
 }
 
+.modal-content iframe {
+  width: 560px;
+  height: 315px;
+}
+
 /* FAQ */
 .faq {
   position: relative;
