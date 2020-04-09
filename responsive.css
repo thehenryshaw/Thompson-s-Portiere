@@ -18,6 +18,7 @@
 
   .gallery-track {
     height: calc(50vw + 130px);
+    max-height: 90vh;
   }
 }
 
@@ -362,11 +363,6 @@
     padding-right: 0;
   }
 
-
-  .contact a::after {
-    bottom: 0px;
-  }
-  
   .contact::before {
     margin: 0 15px 0 15%;
   }

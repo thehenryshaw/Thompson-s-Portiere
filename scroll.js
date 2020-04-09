@@ -41,8 +41,12 @@ menuList.addEventListener('click', event => {
     behavior: 'smooth'
   })
 
+  //close menu on click for mobile view
   if (window.innerWidth <= 640) {
-    menuControl.checked = false;
+    setTimeout(() => {
+      menuControl.checked = false;
+    }, 500)
+    
   }
 })
 
