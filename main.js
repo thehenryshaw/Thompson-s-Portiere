@@ -175,7 +175,7 @@ subscribe.addEventListener('submit', () => {
 // });
 
 /* TESTIMONIALS CAROUSEL */
-const carouselNav = document.querySelector('.carousel-controls');
+/* const carouselNav = document.querySelector('.carousel-controls');
 const carouselTrack = document.querySelector('.testimonials-carousel');
 const dots = Array.from(carouselNav.children);
 const testimonialsSlides = Array.from(carouselTrack.children);
@@ -200,4 +200,4 @@ carouselNav.addEventListener('click', event => {
   targetSlide.classList.add('current-slide');
   dots.forEach(dot => dot.classList.remove('current-slide'));
   target.classList.add('current-slide');
-});
+}); */
