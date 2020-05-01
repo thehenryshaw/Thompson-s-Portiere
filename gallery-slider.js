@@ -33,7 +33,6 @@ function addClasses(slides) {
   }
 }
 
-
 function addPrevClasses(current) {
   current.previousElementSibling.classList.add('past-1');
   if (current.previousElementSibling.previousElementSibling) {
@@ -47,13 +46,6 @@ function addNextClasses(current) {
     current.nextElementSibling.nextElementSibling.classList.add('future-2');
   }
 }
-
-
-
-
-
-
-
 
 
 function onClick (event) {
@@ -94,9 +86,7 @@ function onClick (event) {
         nextSlide.nextElementSibling.classList.remove('future-2');
       }
     } 
-    
     counter--;
-    
   }
   
   //move UP
@@ -127,8 +117,7 @@ function onClick (event) {
                nextSlide.nextElementSibling.nextElementSibling.classList.add('future-2');
             }
         }  
-    }
-    
+    } 
   counter++;
   }
   const amountToMove = currentSlide.firstElementChild.getBoundingClientRect().height;
