@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="./libs/fontAwesome/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery.flipster@1.1.4/dist/jquery.flipster.min.js" crossorigin="anonymous" defer></script>
   <title>Thompson`s Portiere</title>
 </head>
 
@@ -187,9 +188,8 @@
   <section class="testimonials" id="testimonials">
     <h2 class="title">Testimonials</h2>
     <div class="testimonials-carousel-container">
-      <ul class="testimonials-carousel">
+      <ul class="testimonials-carousel owl-carousel owl-theme">
         <li class="testimonials-item current-slide">
-          <div class="cards-container">
             <div class="card">
               <img src="./img/photo.png" alt="Photo">
               <div>
@@ -197,17 +197,8 @@
                 <p class="worker-name">Jessica Parker</p>
               </div>
             </div>
-            <div class="card">
-              <img src="./img/photo.png" alt="Photo">
-              <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum unde velit obcaecati, molestiae.</p>
-                <p class="worker-name">Jessica Parker</p>
-              </div>
-            </div>
-          </div>
         </li>
-        <li class="testimonials-item">
-          <div class="cards-container">
+        <li class="testimonials-item"> 
             <div class="card">
               <img src="./img/photo.png" alt="Photo">
               <div>
@@ -215,17 +206,8 @@
                 <p class="worker-name">Jessica Parker</p>
               </div>
             </div>
-            <div class="card">
-              <img src="./img/photo.png" alt="Photo">
-              <div>
-                <p>Nam voluptatum unde velit obcaecati, molestiae.</p>
-                <p class="worker-name">Jessica Parker</p>
-              </div>
-            </div>
-          </div>
         </li>
         <li class="testimonials-item">
-          <div class="cards-container">
             <div class="card">
               <img src="./img/photo.png" alt="Photo">
               <div>
@@ -233,15 +215,16 @@
                 <p class="worker-name">Jessica Parker</p>
               </div>
             </div>
-            <div class="card">
-              <img src="./img/photo.png" alt="Photo">
-              <div>
-                <p>ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum unde velit obcaecati, molestiae.</p>
-                <p class="worker-name">Jessica Parker</p>
-              </div>
+        </li>
+        <li class="testimonials-item">
+          <div class="card">
+            <img src="./img/photo.png" alt="Photo">
+            <div>
+              <p>ipsum dolor sit amet consectetur adipisicing elit. Nam voluptatum unde velit obcaecati, molestiae.</p>
+              <p class="worker-name">Jessica Parker</p>
             </div>
           </div>
-        </li>
+      </li>
       </ul>
     </div>
     <div class="carousel-controls">
@@ -354,5 +337,7 @@
   <script src="main.js"></script>
   <script src="scroll.js"></script>
   <script src="gallery-slider.js"></script>
+<script src="./libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="./testimonials-slider.js"></script>
 </body>
 </html>
