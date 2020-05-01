@@ -76,7 +76,7 @@ learnMoreBtn.forEach(el => {
 })
 
 /* SMOOTH SCROLL (FOOTER) */
-footerList.addEventListener('click', event => {
+/* footerList.addEventListener('click', event => {
   if (event.target.classList.contains('footer-container')) {
     return;
   }
@@ -114,7 +114,7 @@ footerList.addEventListener('click', event => {
     top: top,
     behavior: 'smooth'
   })
-})
+}) */
 
 /* ACTIVE ITEM */
 menuItemsArray.forEach((el, i) => {

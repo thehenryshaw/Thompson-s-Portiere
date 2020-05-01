@@ -52,9 +52,9 @@
     </div>
     <div class="home-text-container">
         <h1>
-          Custom-made<br>
-          Curtains<br>
-          Home Textile
+          <span> Custom-made</span><br>
+          <span>Curtains</span><br>
+          <span>Home Textile</span>
           <span class="ampersand">&</span> 
         </h1>
       <p>
@@ -103,22 +103,34 @@
         <div class="tabs-content hide-tab">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis, in ipsa quod omnis saepe necessitatibus illum, beatae doloribus cum repellat cumque sed aperiam iste aliquid rerum aut rem corporis?Odio totam a, illo culpa unde assumenda. Praesentium voluptatem magnam soluta saepe explicabo. Inventore, vel. Officiis, modi. Et voluptates sit cum dolor deleniti laboriosam quo perferendis natus. Maxime, laborum repellat.</p>
           <div class="tabs-img">
-            <img src="./img/curtains.png" alt="Sewing-machine">
-            <img src="./img/curtains-full.png" alt="Fabric">
+            <div class="tabs-img-container">
+              <img src="./img/curtains.png" alt="Sewing-machine">
+            </div>
+            <div class="tabs-img-container">
+              <img src="./img/curtains-full.png" alt="Fabric">
+            </div>
           </div>
         </div>
         <div class="tabs-content">
           <p>Aliquam, reprehenderit? Recusandae provident est inventore, illo id reiciendis quisquam quod sed dolor ipsam doloribus facilis rerum qui voluptatem ipsa aut? Consequatur porro, culpa autem quis iste explicabo illum blanditiis ipsum similique laborum facere vero molestias debitis vitae! Dolore assumenda ratione ipsum?</p>
           <div class="tabs-img">
-            <img src="./img/swen.png" alt="Sewing-machine">
-            <img src="./img/fabric.png" alt="Fabric">
+            <div class="tabs-img-container">
+              <img src="./img/swen.png" alt="Sewing-machine">
+            </div>
+            <div class="tabs-img-container">
+              <img src="./img/fabric.png" alt="Fabric">
+            </div>
           </div>
         </div>
         <div class="tabs-content hide-tab">
           <p> Praesentium voluptatem magnam soluta saepe explicabo. Inventore, vel. Officiis, modi. Et voluptates sit cum dolor deleniti laboriosam quo perferendis natus. Maxime, laborum repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           <div class="tabs-img">
-            <img src="./img/v-colors.png" alt="Sewing-machine">
-            <img src="./img/blankets.png" alt="Fabric">
+            <div class="tabs-img-container">
+              <img src="./img/v-colors.png" alt="Sewing-machine">
+            </div>
+            <div class="tabs-img-container">
+              <img src="./img/blankets.png" alt="Fabric">
+            </div>
           </div>
         </div>
       </div>
@@ -280,26 +292,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-container">
-      <ul class="company">
-        <li>Company</li>
-        <li><a href="#about" data-id="About">About us</a></li>
-        <li><a href="#contacts" data-id="Contacts">Contact us</a></li>
-        <li><a href="#follow" data-id="Follow">Follow us</a></li>
-        <li><a href="#subscribe" data-id="Subscribe">Subscribe</a></li>
-      </ul>
-      <ul class="work">
-        <li>Our work</li>
-        <li><a href="#gallery" data-id="Gallery">Gallery</a></li>
-        <li><a href="#tabs" data-id="Tabs">Features</a></li>
-      </ul>
-      <ul class="enquiries">
-        <li>Enquiries</li>
-        <li><a href="#faq" data-id="FAQ">FAQ</a></li>
-        <li><a href="#faq" data-id="FAQ">Ask a question</a></li>
-        <li><a href="#">Terms of Agreement</a></li>
-      </ul>
-    </div>
     <div class="social-footer">
       <ul class="social-list">
         <li><a href="http://instagram.com" target="_blank" class="social-item instagram"></a></li>
@@ -314,19 +306,7 @@
 </div>
 
   <script>
-    const body = document.body;
-    const btn = document.querySelector('input#menu');
-    const wrapper = document.querySelector('.wrapper');
-    btn.addEventListener('change', () => {
-      if (window.innerWidth <= 600) {
-        return;
-      }
-      if (btn.checked) {
-        wrapper.style.width = `80%`;
-      } else {
-        wrapper.style.width = '100%';
-      }
-    })
+
   </script>
 
   <script src="main.js"></script>

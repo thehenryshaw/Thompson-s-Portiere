@@ -504,12 +504,32 @@ header a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 222px;
   justify-content: flex-end;
+    margin-top: 55px;
+}
+.tabs-img-container {
+  width: 333px;
+  align-self: flex-end;
+  height: 222px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .tabs-img img {
-  width: 37%;
-  margin-top: 55px;
+  width: 333px;
+  transition: all ease-out .5s;
+  z-index: 2;
+/*   margin-top: 55px; */
+}
+
+
+.tabs-img img:hover {
+  z-index: 1;
+  transition: all ease-out .5s;
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
 }
 
 .hide-tab {
