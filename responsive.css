@@ -63,7 +63,7 @@
   }
 
   /* HOME */
-  .home::before {
+  .home-page::before {
     width: 55%;
     height: 13%;
     min-width: 200px;
@@ -411,7 +411,7 @@
     justify-content: center;
   }
 
-  .home::before {
+  .home-page::before {
     width: 55%;
     height: 13%;
     min-width: 200px;

@@ -59,6 +59,10 @@ header svg {
   z-index: 15;
 }
 
+header .phone {
+  z-index: 10;
+}
+
 .menu {
   display: flex;
   flex: 1 1;
@@ -212,7 +216,7 @@ header a {
 }
 
 /* HOME */
-.home {
+.home-page {
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
@@ -222,7 +226,7 @@ header a {
   min-height: 768px;
 }
 
-.home::before {
+.home-page::before {
   content: '';
   width: 55%;
   height: 100%;
@@ -1179,17 +1183,14 @@ height: 18px;
   box-sizing: border-box;
 }
 
-.contact a {
+.contact a,
+.contact span {
   text-decoration: none;
   color: #000;
   letter-spacing: 1px;
   position: relative;
   width: 100%;
   display: inline-block;
-}
-
-.contact a:last-of-type {
-  cursor: default;
 }
 
 .contact::before {
@@ -1215,7 +1216,8 @@ height: 18px;
   background-image: url('img/address.svg');
 }
 
-.contact a::after {
+.contact a::after,
+.contact span::after {
   content: '';
   display: block;
   position: absolute;
