@@ -92,7 +92,6 @@ subscribe.addEventListener('submit', () => {
     output.classList.add('error');
     output.classList.remove('success');
   } else {
-    /*сделать отправку на сервер*/ 
     output.classList.remove('error');
     output.classList.add('success');
     output.textContent = 'Thank you! You have been successfully subscribed.';

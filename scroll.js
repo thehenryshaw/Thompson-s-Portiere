@@ -41,12 +41,11 @@ menuList.addEventListener('click', event => {
     behavior: 'smooth'
   })
 
-  //close menu on click for mobile view
+  // CLOSE MENU ON CLICK FOR MOBILE VIEW
   if (window.innerWidth <= 640) {
     setTimeout(() => {
       menuControl.checked = false;
     }, 500)
-    
   }
 })
 
@@ -74,47 +73,6 @@ learnMoreBtn.forEach(el => {
     })
   })
 })
-
-/* SMOOTH SCROLL (FOOTER) */
-/* footerList.addEventListener('click', event => {
-  if (event.target.classList.contains('footer-container')) {
-    return;
-  }
-  event.preventDefault();
-  let top;
-
-  switch(event.target.dataset.id) {
-    case 'About':
-      top = aboutSection.offsetTop;
-      break;
-    case 'FAQ':
-      top = faqSection.offsetTop;
-      break;
-    case 'Follow':
-      top = followSection.offsetTop;
-      break;
-    case 'Tabs':
-      top = tabsSection.offsetTop;
-      break;
-    case 'Subscribe':
-      top = subscribeSection.offsetTop;
-      break;
-    case 'Testimonials':
-      top = testimonaialsSection.offsetTop;
-      break;
-    case 'Gallery':
-      top = gallerySection.offsetTop;
-      break;
-    case 'Contacts':
-      top = contactsSection.offsetTop;
-      break;
-  }
-
-  window.scrollTo({
-    top: top,
-    behavior: 'smooth'
-  })
-}) */
 
 /* ACTIVE ITEM */
 menuItemsArray.forEach((el, i) => {
