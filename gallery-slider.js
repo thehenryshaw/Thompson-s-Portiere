@@ -47,7 +47,6 @@ function addNextClasses(current) {
   }
 }
 
-
 function onClick (event) {
   const target = event.target.closest('li');
   if (!target) {
@@ -56,13 +55,11 @@ function onClick (event) {
   
   const currentSlide = slider.querySelector('.current');
   const currentIndex = slides.findIndex(el => el === currentSlide);
-  
   const nextSlide = currentSlide.nextElementSibling;
   const previousSlide = currentSlide.previousElementSibling;
   
 //move DOWN 
   if (target.classList.contains('past')) {
-    
     currentSlide.classList.remove('current');
     currentSlide.classList.add('future');
     currentSlide.classList.add('future-1');
@@ -121,57 +118,4 @@ function onClick (event) {
   counter++;
   }
   const amountToMove = currentSlide.firstElementChild.getBoundingClientRect().height;
-  // slider.style.transform = `translateY(${-amountToMove * counter}px)`;
-
 }
-
-//autoplay
-// const next = slider.querySelector('.future-1');
-// let autoplay = setInterval(() => {
-//   const next = slider.querySelector('.future-1');
-//   if (next) {
-//     next.click();
-//   } else {
-//     startOver();
-//   }
-// },2000);
-
-// slider.addEventListener('mouseover', event => {
-//   clearInterval(autoplay);
-// })
-// slider.addEventListener('mouseout', event => {
-//   autoplay = setInterval(() => {
-//   const next = slider.querySelector('.future-1');
-//   if (next) {
-//     next.click();
-//   } else {
-//     startOver();
-//   }
-// },2000);
-// });
-
-// function startOver() {
-//   console.log('start over');
-//   slider.style.transform = `translateY(${280 * 2}px)`;
-//   // slider.style.animation = 'reappear .2s linear'; 
-//   slider.style.transition = 'all 0.3s ease-out';
-//   counter = -2;
-  
-//   slides.forEach((slide, i) => {
-//     if (i > 0) {
-//     slide.classList.remove('future-1');
-//     slide.classList.remove('future-2');
-//     slide.classList.remove('past-1');
-//     slide.classList.remove('past-2');
-//     slide.classList.remove('past');
-//     slide.classList.remove('current');
-//     slide.classList.add('future');
-//     } else {
-//       slide.classList.remove('past');
-//       slide.classList.add('current');
-//     }
-//   });
-
-//   slides[1].classList.add('future-1');
-//   slides[2].classList.add('future-2');
-// }

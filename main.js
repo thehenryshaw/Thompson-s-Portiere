@@ -92,39 +92,9 @@ subscribe.addEventListener('submit', () => {
     output.classList.add('error');
     output.classList.remove('success');
   } else {
-    /*сделать отправку на сервер*/ 
     output.classList.remove('error');
     output.classList.add('success');
     output.textContent = 'Thank you! You have been successfully subscribed.';
     subscribeInput.value = '';
   }
-})
-
-
-/* TESTIMONIALS CAROUSEL */
-/* const carouselNav = document.querySelector('.carousel-controls');
-const carouselTrack = document.querySelector('.testimonials-carousel');
-const dots = Array.from(carouselNav.children);
-const testimonialsSlides = Array.from(carouselTrack.children);
-
-carouselNav.addEventListener('click', event => {
-  const target = event.target;
-  if (!event.target.closest('button')) {
-    return;
-  }
-  if (event.target.classList.contains('active')) {
-    return;
-  }
-  const idx = dots.findIndex(dot => dot === target);
-  const currentSlide = carouselTrack.querySelector('.current-slide');
-  const targetSlide = testimonialsSlides[idx];
-  
-  //move
-  carouselTrack.style.transform = `translateX(-${window.innerWidth * 0.7 * idx}px)`;
-  
-  //update classes
-  currentSlide.classList.remove('current-slide');
-  targetSlide.classList.add('current-slide');
-  dots.forEach(dot => dot.classList.remove('current-slide'));
-  target.classList.add('current-slide');
-}); */
+});
